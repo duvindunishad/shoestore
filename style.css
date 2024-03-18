@@ -430,25 +430,19 @@ footer {
 
 
 header {
-    background-color: #05190A;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background-color: #C2001F;
-    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
-
-    display: block;
-    list-style-type: disc;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    height: 90px;
+    padding: 0 5%;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #C2001F; /* Semi-transparent background color */
+    backdrop-filter: blur(20px); /* Adjust the blur amount as needed */
+    z-index: 1000;
 
 }
 
@@ -459,6 +453,7 @@ header .navigation ul li a {
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
+    font-weight: bold;
 }
 
 header .navigation ul li a::after {
@@ -482,7 +477,7 @@ header .navigation ul li a:hover::after {
 }
 
 
-header .navigation ul li .btnLogin-popup {
+/* header .navigation ul li .btnLogin-popup {
     width: 130px;
     height: 50px;
     background: transparent;
@@ -494,10 +489,10 @@ header .navigation ul li .btnLogin-popup {
     color: #fff;
     font-weight: 500;
     margin-left: 40px;
-}
+} */
 
 header .navigation ul li .btnLogin-popup:hover {
-    background-color: #05190A;
+    background-color: #2d48e3;
     color: #fff;
 }
 
@@ -519,18 +514,18 @@ header .navigation ul li a {
     /* color: white; */
     /* font-size: 17px; */
     padding: 7px 13px;
-    border-radius: 3px;
+    border-radius: 5px;
     text-transform: uppercase;
 }
 
 ul li a.active, ul li a:hover {
-    background: #05190A;
+    background: #000000;
     transition: .5s;
 }
 
  .check_btn {
     font-size: 25px;
-    color: white;
+    color: rgb(255, 255, 255);
     float: left;
     line-height: 50px;
     margin-right: 10px;
@@ -549,14 +544,14 @@ ul li a.active, ul li a:hover {
         position: fixed;
         width:50%;
         height: 70vh;
-        background: #2c5038;
+        background: #C2001F;
         top: 100px;
         left: -100%;
         text-align:left;
         transition: all .5s;
         border: 2px solid #c9c8c8;
         border-radius: 6px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
     }
     header .navigation ul li {
@@ -574,7 +569,7 @@ ul li a.active, ul li a:hover {
 
 .logo {
     /* Your existing logo styles */
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     user-select: none;
     font-size: 25px;
     line-height: 50px;
